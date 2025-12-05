@@ -12,7 +12,7 @@
   font-family: 'Titillium Web', sans-serif;
   font-weight: 700;
   font-style: normal;
-  color: #ffffff; /* Textfarbe */
+  color: #ffffff;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.4),
     0 0 20px rgba(0, 0, 0, 0.2);
 }
@@ -36,7 +36,7 @@ footer {
 .nav-menu {
   display: flex;
   justify-content: center; /* horizontal zentrieren */
-  gap: 40px; /* Abstand zwischen den Links */
+  gap: 45px; /* Abstand zwischen den Links */
   list-style: none; /* Punkte entfernen */
   padding: 0;
 }
@@ -45,6 +45,11 @@ footer {
 h2 {
   display: flex;
   justify-content: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .top-image {
