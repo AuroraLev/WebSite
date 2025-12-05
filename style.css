@@ -13,3 +13,15 @@
   font-weight: 700;
   font-style: normal;
 }
+
+body {
+  background: linear-gradient(135deg, #8a00ff, #00eaff);
+  background-attachment: fixed;
+  margin: 0;
+}
+
+header,
+main,
+footer {
+  background: transparent; /* wichtig falls sie etwas überschreiben */
+}
