@@ -12,16 +12,48 @@
   font-family: 'Titillium Web', sans-serif;
   font-weight: 700;
   font-style: normal;
+  color: #ffffff; /* Textfarbe */
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.6),
+    0 0 10px rgba(255, 255, 255, 0.4), 0 0 20px rgba(255, 255, 255, 0.2);
 }
 
 body {
-  background: linear-gradient(135deg, #8a00ff, #00eaff);
+  background: linear-gradient(180deg, #8a00ff, #00eaff);
   background-attachment: fixed;
   margin: 0;
 }
 
-header,
+header {
+  background: transparent;
+  margin-top: 0px;
+}
+
 main,
 footer {
-  background: transparent; /* wichtig falls sie etwas überschreiben */
+  background: transparent;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center; /* horizontal zentrieren */
+  gap: 40px; /* Abstand zwischen den Links */
+  list-style: none; /* Punkte entfernen */
+  padding: 0;
+}
+
+.header-format,
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.top-image {
+  width: 200px; /* Größe anpassen */
+  height: 200px; /* gleiche Höhe wie Breite → perfekt für Kreis */
+  object-fit: cover; /* sorgt dafür, dass das Bild nicht verzerrt wird */
+  border-radius: 50%; /* macht daraus einen Kreis */
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+  display: block;
+  margin: 0 auto; /* optional: zentriert das Bild */
+  margin-top: 50px;
 }
