@@ -6,6 +6,7 @@
   font-family: 'Titillium Web', sans-serif;
   font-weight: 300;
   font-style: normal;
+  animation: fadeIn 3s ease forwards;
 }
 
 .titillium-web-regular {
@@ -15,6 +16,7 @@
   color: #ffffff;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.4),
     0 0 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 3s ease forwards;
 }
 
 body {
@@ -23,9 +25,15 @@ body {
   margin: 0;
 }
 
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0px);}
+}
+
 header {
   background: transparent;
   margin-top: 0px;
+  animation: fadeIn 3s ease forwards;
 }
 
 main,
@@ -36,9 +44,10 @@ footer {
 .nav-menu {
   display: flex;
   justify-content: center; /* horizontal zentrieren */
-  gap: 45px; /* Abstand zwischen den Links */
+  gap: 45px;
   list-style: none; /* Punkte entfernen */
   padding: 0;
+  animation: fadeIn 3s ease forwards;
 }
 
 .header-format,
@@ -53,12 +62,13 @@ h2 {
 }
 
 .top-image {
-  width: 200px; /* Größe anpassen */
-  height: 200px; /* gleiche Höhe wie Breite → perfekt für Kreis */
+  width: 325px; /* Größe anpassen */
+  height: 325px; /* gleiche Höhe wie Breite → perfekt für Kreis */
   object-fit: cover; /* sorgt dafür, dass das Bild nicht verzerrt wird */
   border-radius: 50%; /* macht daraus einen Kreis */
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
   display: block;
   margin: 0 auto; /* optional: zentriert das Bild */
-  margin-top: 50px;
+  margin-top: 275px;
+  animation: fadeIn 4s ease forwards;
 }
