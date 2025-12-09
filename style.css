@@ -50,10 +50,20 @@ footer {
   animation: fadeIn 3s ease forwards;
 }
 
-.header-format,
+.header-format{
+  display: flex;
+  justify-content: center;
+}
+
 h2 {
   display: flex;
   justify-content: center;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  animation: fadeIn 3s ease forwards;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.4),
+    0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .nav-link {
@@ -71,4 +81,30 @@ h2 {
   margin: 0 auto; /* optional: zentriert das Bild */
   margin-top: 275px;
   animation: fadeIn 4s ease forwards;
+}
+
+.wave-container {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 300px;
+  margin-top: -50px;
+}
+
+.waves path {
+  fill: rgba(255, 255, 255, 0.4);
+  animation: wave 6s infinite linear;
+}
+
+@keyframes wave {
+  0% {
+    d: path("M0,160L80,165C160,170,320,180,480,170C640,160,800,130,960,130C1120,130,1280,160,1360,175L1440,190L1440,320L0,320Z");
+  }
+  50% {
+    d: path("M0,150L80,140C160,130,320,140,480,150C640,160,800,175,960,170C1120,165,1280,135,1360,120L1440,105L1440,320L0,320Z");
+  }
+  100% {
+    d: path("M0,160L80,165C160,170,320,180,480,170C640,160,800,130,960,130C1120,130,1280,160,1360,175L1440,190L1440,320L0,320Z");
+  }
 }
